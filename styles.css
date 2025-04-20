@@ -1,0 +1,99 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    transition: transform 0.3s ease;
+    font-size: 1.7rem;
+}
+
+h1:hover{
+    transform: scale(1.05);
+}
+
+#main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    margin: 0px 20rem 0px 20rem;
+    height: 60vh;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+.box{
+    border: 2px solid black;
+    width: 20vh;
+    height: 20vh;
+    margin: 20px;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+.box:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.uni{
+        border: 2px solid black;
+        width: 20vh;
+        height: 20vh;
+        margin: 20px;
+    }
+
+button{
+    font-size: 1.1rem;
+    border-radius: 6px;
+    background-color: rgb(86, 86, 219);
+    color: white;
+    margin-left: 47%;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* For phone screens */
+@media(max-width:500px){
+    h1{
+        font-size: 1.3rem;
+        font-style:italic;
+    }
+    #main-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 2px solid black;
+        margin: 0px 5rem 0px 5rem;
+        height: 70vh;
+    }
+    
+    .box{
+        border: 2px solid black;
+        width: 11.5vh;
+        height: 11.5vh;
+        margin: 8px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    button{
+        font-size: 1rem;
+        border-radius: 4px;
+        background-color: rgb(86, 86, 219);
+        color: white;
+        margin-left: 43%;
+        margin-top: 10px
+    }
+}
+
